@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>safi - المنتجات</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project.css">
+  <link rel="stylesheet" href="products.css">
+</head>
+<body>
+
+<header class="main-header">
+  <div class="header-brand">
+    <a class="header-logo-link" href="./index.html" aria-label="safi">
+      <img class="header-logo" src="photo/logo safi_1.png" alt="safi logo">
+    </a>
+    <h1 class="company-name"></h1>
+  </div>
+
+  <nav class="desktop-nav" aria-label="Main navigation">
+    <a href="./index.html#home" data-i18n="nav.home">Home</a>
+    <a href="./all-products.html" data-i18n="nav.products">Products</a>
+    <a href="./index.html#coolers" data-i18n="nav.coolers">Coolers</a>
+    <a href="./services.html" data-i18n="nav.services">Services</a>
+    <a href="./index.html#contact" data-i18n="nav.contact">Contact</a>
+  </nav>
+
+  <div class="header-actions">
+    <button type="button" class="icon-btn menu-btn" aria-expanded="false" aria-label="Menu">
+      <span class="menu-bars" aria-hidden="true"></span>
+    </button>
+    <button type="button" class="icon-btn search-btn" aria-label="Search">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+    <a href="./login.html" target="_blank" rel="noopener noreferrer" class="header-auth-link header-icon-link account-link" aria-label="Login or Register" title="Login / Register">
+      <span class="icon-user-plus" aria-hidden="true"></span>
+    </a>
+    <button type="button" class="icon-btn lang-toggle-btn" aria-label="Toggle language" title="Toggle language">
+      <span class="icon-globe" aria-hidden="true"></span>
+      <span class="lang-code">EN</span>
+    </button>
+  </div>
+
+  <div class="header-menu" hidden>
+    <nav class="menu-nav">
+      <a href="./index.html#home" data-i18n="nav.home">Home</a>
+      <a href="./all-products.html" data-i18n="nav.products">Products</a>
+      <a href="./index.html#coolers" data-i18n="nav.coolers">Coolers</a>
+      <a href="./services.html" data-i18n="nav.services">Services</a>
+      <a href="./all-products.html" class="btn" data-i18n="nav.order">Order Now</a>
+      <a href="./index.html#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="menu-extra-actions">
+      <button type="button" class="icon-btn search-btn menu-search-btn" aria-label="Search">
+        <span class="icon-search" aria-hidden="true"></span>
+      </button>
+      <a href="./login.html" target="_blank" rel="noopener noreferrer" class="header-auth-link header-icon-link menu-account-link" aria-label="Login or Register" title="Login / Register">
+        <span class="icon-user-plus" aria-hidden="true"></span>
+      </a>
+      <button type="button" class="icon-btn lang-toggle-btn menu-lang-toggle-btn" aria-label="Toggle language" title="Toggle language">
+        <span class="icon-globe" aria-hidden="true"></span>
+        <span class="lang-code">EN</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="site-search-panel" hidden>
+  <div class="site-search-box">
+    <div class="site-search-head">
+      <input type="search" class="site-search-input" autocomplete="off" placeholder="Search in page...">
+      <button type="button" class="icon-btn site-search-close" aria-label="Close search">×</button>
+    </div>
+    <div class="site-search-results"></div>
+  </div>
+</div>
+
+<main class="products-page">
+  <section class="products-hero">
+    <div class="products-hero-copy">
+      <p class="products-kicker">safi products</p>
+      <h2>كل حلول تنقية المياه في مكان واحد</h2>
+      <p>فلاتر متعددة المراحل، شمعات تغيير، وبرادات مناسبة للبيت والمكتب بنفس شكل وتجربة الصفحة الرئيسية.</p>
+      <a class="cooler-cta" href="./index.html#contact">اطلب استشارة</a>
+    </div>
+    <img src="مراحل الفلتر/فلتر 7 مراحل.png" alt="فلتر مياه 7 مراحل">
+  </section>
+
+  <section class="product-tools" aria-label="فلترة المنتجات">
+    <div class="search-box">
+      <input type="text" class="product-search-input" placeholder="ابحث عن منتج...">
+    </div>
+
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">الكل</button>
+      <button class="filter-btn" data-filter="filter">الفلاتر</button>
+      <button class="filter-btn" data-filter="stage">الشمعات</button>
+      <button class="filter-btn" data-filter="cooler">البرادات</button>
+    </div>
+  </section>
+
+  <section class="products-section" id="products" aria-label="كل المنتجات">
+    <article class="product-card" data-category="filter">
+      <div class="badge">الأكثر طلبًا</div>
+      <img src="مراحل الفلتر/فلتر 7 مراحل.png" alt="فلتر 7 مراحل">
+      <div class="product-info">
+        <h3>فلتر 7 مراحل</h3>
+        <p>نظام كامل للتنقية العميقة مع تحسين الطعم وإضافة المعادن.</p>
+        <div class="price-row">
+          <span class="price">4,500 EGP</span>
+          <a href="./index.html#contact">اطلب</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="filter">
+      <img src="مراحل الفلتر/فلتر 5 مراحل .png" alt="فلتر 5 مراحل">
+      <div class="product-info">
+        <h3>فلتر 5 مراحل</h3>
+        <p>حل عملي لتنقية مياه الشرب اليومية وتقليل الرواسب والكلور.</p>
+        <div class="price-row">
+          <span class="price">3,300 EGP</span>
+          <a href="./index.html#contact">اطلب</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="filter">
+      <img src="مراحل الفلتر/فلتر 3 مراحل.jpg" alt="فلتر 3 مراحل">
+      <div class="product-info">
+        <h3>فلتر 3 مراحل</h3>
+        <p>اختيار اقتصادي لتحسين الطعم وإزالة الشوائب الأساسية.</p>
+        <div class="price-row">
+          <span class="price">1,850 EGP</span>
+          <a href="./index.html#contact">اطلب</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="stage">
+      <div class="badge">صيانة</div>
+      <img src="مراحل الفلتر/مرحله 1.png" alt="شمعة المرحلة الأولى">
+      <div class="product-info">
+        <h3>شمعة رواسب</h3>
+        <p>تحمي النظام من الرمل والصدأ والشوائب الكبيرة.</p>
+        <div class="price-row">
+          <span class="price">160 EGP</span>
+          <a href="./index.html#contact">اطلب</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="stage">
+      <img src="مراحل الفلتر/مرحله 4.png" alt="غشاء RO">
+      <div class="product-info">
+        <h3>غشاء RO</h3>
+        <p>مرحلة تنقية دقيقة لتقليل الأملاح والمعادن الثقيلة.</p>
+        <div class="price-row">
+          <span class="price">780 EGP</span>
+          <a href="./index.html#contact">اطلب</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="cooler">
+      <div class="badge">جديد</div>
+      <img src="photo/photo to nano tech/براده قائمه.jpeg" alt="براد مياه قائم">
+      <div class="product-info">
+        <h3>براد مياه قائم</h3>
+        <p>مناسب للمنازل والمكاتب مع أداء ثابت ومساحة تخزين عملية.</p>
+        <div class="price-row">
+          <span class="price">5,900 EGP</span>
+          <a href="./coolers-details.html">التفاصيل</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="cooler">
+      <img src="photo/photo to nano tech/براده قائمه تحميل سفلي.jpeg" alt="براد تحميل سفلي">
+      <div class="product-info">
+        <h3>براد تحميل سفلي</h3>
+        <p>تصميم حديث يخفي العبوة ويخلي تغييرها أسهل بدون رفع ثقيل.</p>
+        <div class="price-row">
+          <span class="price">7,200 EGP</span>
+          <a href="./coolers-details.html">التفاصيل</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="cooler">
+      <img src="photo/photo to nano tech/WhatsApp Image 2026-02-20 at 1.18.00 PM.jpeg" alt="براد سطح مكتب">
+      <div class="product-info">
+        <h3>براد سطح مكتب</h3>
+        <p>اختيار مدمج للمكاتب الصغيرة والاستقبال مع مياه باردة وساخنة.</p>
+        <div class="price-row">
+          <span class="price">3,950 EGP</span>
+          <a href="./coolers-details.html">التفاصيل</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="cooler">
+      <div class="badge">مناسب للمكتب</div>
+      <img src="photo/photo to nano tech/WhatsApp Image 2026-02-20 at 1.18.00 PM (1).jpeg" alt="براد مكتبي">
+      <div class="product-info">
+        <h3>براد مكتبي عملي</h3>
+        <p>حجم مناسب للاستخدام اليومي في الشركات والعيادات وغرف الاجتماعات.</p>
+        <div class="price-row">
+          <span class="price">4,250 EGP</span>
+          <a href="./coolers-details.html">التفاصيل</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- <article class="product-card" data-category="cooler">
+      <img src="photo/photo to nano tech/WhatsApp Image 2026-02-20 at 1.17.59 PM.jpeg" alt="براد مياه منزلي">
+      <div class="product-info">
+        <h3>براد منزلي</h3>
+        <p>براد مناسب للعائلات والمساحات المتوسطة مع شكل بسيط واستخدام مريح.</p>
+        <div class="price-row">
+          <span class="price">5,450 EGP</span>
+          <a href="./coolers-details.html">التفاصيل</a>
+        </div>
+      </div>
+    </article> -->
+
+    <!-- <article class="product-card" data-category="cooler">
+      <div class="badge">سعة أعلى</div>
+      <img src="photo/photo to nano tech/WhatsApp Image 2026-02-20 at 1.17.59 PM (1).jpeg" alt="براد مياه للمكاتب">
+      <div class="product-info">
+        <h3>براد للمكاتب</h3>
+        <p>مناسب للاستهلاك الأعلى في أماكن العمل مع أداء ثابت طول اليوم.</p>
+        <div class="price-row">
+          <span class="price">6,300 EGP</span>
+          <a href="./coolers-details.html">التفاصيل</a>
+        </div>
+      </div>
+    </article> -->
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-shell">
+    <div class="footer-brand-panel">
+      <a class="footer-logo-link" href="./index.html#home" aria-label="safi">
+        <img class="footer-logo" src="photo/logo safi_1.png" alt="safi logo">
+      </a>
+      <div>
+        <p class="footer-brand-name">safi</p>
+        <p class="footer-brand-text" data-i18n="footer.brand.text">Clean water systems, filter maintenance, and practical cooler solutions for homes and workplaces.</p>
+      </div>
+    </div>
+
+    <div class="footer-content">
+      <div class="footer-column">
+        <h2 data-i18n="footer.links.title">Explore</h2>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="./index.html#home" data-i18n="nav.home">Home</a>
+          <a href="./all-products.html" data-i18n="nav.products">Products</a>
+          <a href="./services.html" data-i18n="nav.services">Services</a>
+          <a href="./index.html#coolers" data-i18n="nav.coolers">Coolers</a>
+        </nav>
+      </div>
+
+      <div class="footer-column">
+        <h2 data-i18n="footer.services.title">Services</h2>
+        <ul class="footer-list">
+          <li data-i18n="footer.services.installation">Filter installation</li>
+          <li data-i18n="footer.services.maintenance">Scheduled maintenance</li>
+          <li data-i18n="footer.services.coolers">Cooler consultation</li>
+          <li data-i18n="footer.services.support">After-sales support</li>
+        </ul>
+      </div>
+
+      <div class="footer-column footer-contact">
+        <h2 data-i18n="footer.contact.title">Contact</h2>
+        <a href="tel:+201019213914">+20 1019213914</a>
+        <a href="mailto:info@safi-water.com">info@safi-water.com</a>
+        <span data-i18n="footer.contact.location">Cairo, Egypt</span>
+      </div>
+
+      <div class="footer-cta">
+        <p data-i18n="footer.cta.title">Need help choosing the right system?</p>
+        <a href="./index.html#contact" data-i18n="footer.cta.link">Request advice</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p><span data-i18n="footer.rights.prefix">All rights reserved</span> <span class="footer-year">2026</span> <span>safi</span></p>
+      <a href="./index.html#home" data-i18n="footer.back_top">Back to top</a>
+    </div>
+  </div>
+</footer>
+
+<script src="project.js"></script>
+<script src="product.js"></script>
+</body>
+</html>

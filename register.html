@@ -1,0 +1,117 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+=======
+﻿<!DOCTYPE html>
+>>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إنشاء حساب جديد | صافي</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <a class="page-corner-logo" href="./index.html" aria-label="صافي الرئيسية">
+    <img src="photo/logo safi_1.png" alt="شعار صافي">
+  </a>
+
+  <main class="login-page">
+    <section class="login-card" aria-labelledby="registerTitle">
+      <div class="card-brand">
+        <p class="brand">صافي</p>
+        <img class="card-brand-logo" src="photo/logo safi_1.png" alt="شعار صافي">
+      </div>
+      <h1 id="registerTitle">إنشاء حساب جديد</h1>
+      <p class="subtitle">سجّل بياناتك الأساسية للانضمام إلينا.</p>
+
+      <form id="registerForm" class="login-form" action="./register.html" method="post" novalidate>
+        <div class="field">
+          <label for="fullName">الاسم بالكامل</label>
+          <input id="fullName" name="full_name" type="text" required autocomplete="name">
+          <p id="fullNameError" class="field-error" aria-live="polite"></p>
+        </div>
+
+        <div class="field">
+          <label for="countryCode">رقم الهاتف</label>
+          <div class="phone-row">
+            <select id="countryCode" name="country_code" required>
+              <option value="">اختر مفتاح الدولة</option>
+              <option value="+20">مصر (+20)</option>
+              <option value="+966">السعودية (+966)</option>
+              <option value="+971">الإمارات (+971)</option>
+              <option value="+965">الكويت (+965)</option>
+              <option value="+974">قطر (+974)</option>
+              <option value="+973">البحرين (+973)</option>
+              <option value="+968">عُمان (+968)</option>
+              <option value="+962">الأردن (+962)</option>
+              <option value="+961">لبنان (+961)</option>
+              <option value="+212">المغرب (+212)</option>
+              <option value="+216">تونس (+216)</option>
+              <option value="+213">الجزائر (+213)</option>
+              <option value="+1">USA/Canada (+1)</option>
+              <option value="+44">UK (+44)</option>
+              <option value="+33">France (+33)</option>
+              <option value="+49">Germany (+49)</option>
+              <option value="+39">Italy (+39)</option>
+              <option value="+34">Spain (+34)</option>
+              <option value="+90">Turkey (+90)</option>
+              <option value="+91">India (+91)</option>
+              <option value="+61">Australia (+61)</option>
+              <option value="+81">Japan (+81)</option>
+              <option value="+86">China (+86)</option>
+            </select>
+            <div class="phone-input-wrap">
+              <span id="countryCodeBadge" class="country-code-badge">+--</span>
+              <input id="phone" name="phone" type="tel" inputmode="numeric" required autocomplete="tel-national">
+            </div>
+          </div>
+          <input id="fullPhone" name="full_phone" type="hidden">
+          <p id="phoneError" class="field-error" aria-live="polite"></p>
+        </div>
+
+        <div class="field">
+          <label for="regEmail">البريد الإلكتروني</label>
+          <input id="regEmail" name="email" type="email" required autocomplete="email">
+          <p id="regEmailError" class="field-error" aria-live="polite"></p>
+        </div>
+
+        <div class="field">
+          <label for="regPassword">كلمة المرور</label>
+          <input id="regPassword" name="password" type="password" required autocomplete="new-password">
+          <p id="regPasswordError" class="field-error" aria-live="polite"></p>
+        </div>
+
+        <div class="field">
+          <label for="confirmPassword">تأكيد كلمة المرور</label>
+          <input id="confirmPassword" name="confirm_password" type="password" required autocomplete="new-password">
+          <p id="confirmPasswordError" class="field-error" aria-live="polite"></p>
+        </div>
+
+        <div class="row">
+          <label class="remember">
+            <input id="terms" type="checkbox" name="terms" required>
+            أوافق على الشروط والأحكام
+          </label>
+        </div>
+        <p id="termsError" class="field-error" aria-live="polite"></p>
+
+        <button type="submit">إنشاء الحساب</button>
+      </form>
+
+      <p class="footer-note">
+        لديك حساب بالفعل؟
+        <a href="./login.html" target="_blank" rel="noopener noreferrer">تسجيل الدخول</a>
+      </p>
+    </section>
+  </main>
+  <script src="register.js"></script>
+</body>
+</html>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd

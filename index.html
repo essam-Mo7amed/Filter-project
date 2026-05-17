@@ -1,0 +1,1031 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+=======
+﻿<!DOCTYPE html>
+>>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta.title">safi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+<header class="main-header">
+  <div class="header-brand">
+    <a class="header-logo-link" href="./index.html" aria-label="safi">
+      <img class="header-logo" src="photo/logo safi_1.png" alt="safi logo">
+    </a>
+<<<<<<< HEAD
+    <h1 class="company-name"></h1>
+  </div>
+
+  <nav class="desktop-nav" aria-label="Main navigation">
+    <a href="#home" data-i18n="nav.home">Home</a>
+    <a href="./all-products.html" data-i18n="nav.products">Products</a>
+    <a href="#coolers" data-i18n="nav.coolers">Coolers</a>
+    <a href="./services.html" data-i18n="nav.services">Services</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
+  </nav>
+
+  <div class="header-actions">
+    <button type="button" class="icon-btn menu-btn" aria-expanded="false" aria-label="Menu">
+=======
+    <h1 id="companyName"></h1>
+  </div>
+
+  <div class="header-actions">
+    <button type="button" class="icon-btn menu-btn" aria-expanded="false" aria-controls="headerMenu" aria-label="Menu">
+>>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
+      <span class="menu-bars" aria-hidden="true"></span>
+    </button>
+    <button type="button" class="icon-btn search-btn" aria-label="Search">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+    <a href="./login.html" target="_blank" rel="noopener noreferrer" class="header-auth-link header-icon-link account-link" aria-label="Login or Register" title="Login / Register">
+      <span class="icon-user-plus" aria-hidden="true"></span>
+    </a>
+<<<<<<< HEAD
+    <button type="button" class="icon-btn lang-toggle-btn" aria-label="Toggle language" title="Toggle language">
+=======
+    <button type="button" id="langToggleBtn" class="icon-btn lang-toggle-btn" aria-label="Toggle language" title="Toggle language">
+>>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
+      <span class="icon-globe" aria-hidden="true"></span>
+      <span class="lang-code">EN</span>
+    </button>
+  </div>
+
+<<<<<<< HEAD
+  <div class="header-menu" hidden>
+    <nav class="menu-nav">
+      <a href="#home" data-i18n="nav.home">Home</a>
+      <a href="./all-products.html" data-i18n="nav.products">Products</a>
+      <a href="#coolers" data-i18n="nav.coolers">Coolers</a>
+      <a href="./services.html" data-i18n="nav.services">Services</a>
+      <a href="./all-products.html" class="btn" data-i18n="nav.order">Order Now</a>
+=======
+  <div id="headerMenu" class="header-menu" hidden>
+    <nav class="menu-nav">
+      <a href="#home" data-i18n="nav.home">Home</a>
+      <a href="#products" data-i18n="nav.products">Products</a>
+      <a href="#coolers" data-i18n="nav.coolers">Coolers</a>
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#products" class="btn" data-i18n="nav.order">Order Now</a>
+>>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="menu-extra-actions">
+      <button type="button" class="icon-btn search-btn menu-search-btn" aria-label="Search">
+        <span class="icon-search" aria-hidden="true"></span>
+      </button>
+      <a href="./login.html" target="_blank" rel="noopener noreferrer" class="header-auth-link header-icon-link menu-account-link" aria-label="Login or Register" title="Login / Register">
+        <span class="icon-user-plus" aria-hidden="true"></span>
+      </a>
+<<<<<<< HEAD
+      <button type="button" class="icon-btn lang-toggle-btn menu-lang-toggle-btn" aria-label="Toggle language" title="Toggle language">
+=======
+      <button type="button" id="langToggleMenuBtn" class="icon-btn lang-toggle-btn menu-lang-toggle-btn" aria-label="Toggle language" title="Toggle language">
+>>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
+        <span class="icon-globe" aria-hidden="true"></span>
+        <span class="lang-code">EN</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<<<<<<< HEAD
+<div class="site-search-panel" hidden>
+  <div class="site-search-box">
+    <div class="site-search-head">
+      <input type="search" class="site-search-input" autocomplete="off" placeholder="Search in page...">
+      <button type="button" class="icon-btn site-search-close" aria-label="Close search">×</button>
+    </div>
+    <div class="site-search-results"></div>
+=======
+<div id="siteSearchPanel" class="site-search-panel" hidden>
+  <div class="site-search-box">
+    <div class="site-search-head">
+      <input id="siteSearchInput" type="search" class="site-search-input" autocomplete="off" placeholder="Search in page...">
+      <button type="button" id="siteSearchCloseBtn" class="icon-btn site-search-close" aria-label="Close search">×</button>
+    </div>
+    <div id="siteSearchResults" class="site-search-results"></div>
+>>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
+  </div>
+</div>
+
+<main>
+<!-- سكشن العروض  -->
+  <section id="home">
+    <p class="first" data-i18n="section.offers.title">العروض المقدمه من الشركه</p>
+<<<<<<< HEAD
+    <div class="offers-slider" aria-label="Company offers">
+      <div class="offers-slide is-active">
+        <img src="photo/offeers/Screenshot 2026-05-10 210940.png" alt="عرض خاص من صافي">
+      </div>
+      <div class="offers-slide">
+        <img src="photo/offeers/Screenshot 2026-05-10 211014.png" alt="عرض صافي لأنظمة تنقية المياه">
+      </div>
+      <button type="button" class="offers-nav offers-nav-prev" aria-label="Previous offer">&#10094;</button>
+      <button type="button" class="offers-nav offers-nav-next" aria-label="Next offer">&#10095;</button>
+      <div class="offers-dots" aria-hidden="true">
+        <span class="is-active"></span>
+        <span></span>
+      </div>
+    </div>
+=======
+>>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
+  </section>
+
+  <!--   سكشن الفلاتر الرئيسية حسب عدد المراحل  -->
+
+
+  <section class="stage-filters-row">
+    <h1 class="stage-filters-title">
+      <span data-i18n="section.stage_filters.title_main">Filter Types</span>
+      <span class="stage-filters-hover" data-i18n="section.stage_filters.title_hint">By Number of Stages</span>
+    </h1>
+<<<<<<< HEAD
+    <div class="stage-filters-track" aria-label="Filter stages">
+=======
+>>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
+      <!-- فلتر 7 مراحل -->
+    <article class="stage-filter-card seven-filter">
+      <div class="section-header">
+        <h2 data-i18n="section.stages.title">7-Stage Filter System</h2>
+        <p data-i18n="section.stages.subtitle">See every stage and what it does to improve your water quality.</p>
+      </div>
+      <img class="filter-stages-img" src="مراحل الفلتر/فلتر 7 مراحل.png" alt="7 stage water filter" data-i18n-alt="section.stages.image_alt">
+    </article>
+
+    <!-- فلتر 5 مراحل -->
+    <article class="stage-filter-card second-filter">
+      <div class="section-header">
+        <h2 data-i18n="section.five_stages.title">5-Stage Filter System</h2>
+        <p data-i18n="section.five_stages.subtitle">A compact 5-stage purifier that improves taste, reduces chlorine, and provides clean water for everyday use.</p>
+      </div>
+      <img class="filter-stages-img" src="مراحل الفلتر/فلتر 5 مراحل .png" alt="5 stage water filter" data-i18n-alt="section.five_stages.image_alt">
+    </article>
+    <!-- فلتر 3 مراحل -->
+    <article class="stage-filter-card third-filter">
+      <div class="section-header">
+        <h2 data-i18n="section.third_stages.title">3-Stage Filter System</h2>
+        <p data-i18n="section.third_stages.subtitle">A practical 3-stage filter for everyday use that improves taste, reduces chlorine, and removes common impurities.</p>
+      </div>
+      <img class="filter-stages-img" src="مراحل الفلتر/فلتر 3 مراحل.jpg" alt="3 stage water filter" data-i18n-alt="section.third_stages.image_alt">
+    </article>
+
+    <!-- فلتر المياه المركزي -->
+    <article class="stage-filter-card whole-house-filter">
+      <div class="section-header">
+        <h2 data-i18n="section.whole_house.title">Whole House Water Filter</h2>
+        <p data-i18n="section.whole_house.subtitle">A central filtration system that purifies water at the main entry point to protect every tap, shower, and appliance.</p>
+      </div>
+      <img class="filter-stages-img" src="مراحل الفلتر/مراحل المركزي.png" alt="Whole house water filter" data-i18n-alt="section.whole_house.image_alt">
+    </article>
+<<<<<<< HEAD
+    </div>
+=======
+>>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
+
+  </section>
+
+
+
+<<<<<<< HEAD
+<!-- سكشن مجموعة الفلاتر -->
+=======
+<!-- سكشن مجموعة الفلاتر --> 
+>>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
+  <section id="products" class="filters">
+    <div class="section-header">
+      <h2 data-i18n="section.title">Our Filter Lineup</h2>
+      <p data-i18n="section.subtitle">Explore each filter and its purification stages so you can choose the right fit for your water needs.</p>
+    </div>
+
+    <div class="filter-grid">
+      <!-- Type: Carbon Filter -->
+      <article class="filter-card">
+        <div class="popup" data-i18n="filters.carbon.popup">Carbon filter for taste & odor. Great for city tap water.</div>
+        <h3 data-i18n="filters.carbon.name">Carbon Shield Filter</h3>
+        <p class="filter-note" data-i18n="filters.carbon.note">Best for taste, odor, and chlorine removal.</p>
+        <div class="filter-details">
+          <div>
+            <h4 data-i18n="labels.key_details">Key Details</h4>
+            <ul>
+              <li data-i18n="filters.carbon.details.flow">Flow rate: 2.5 L/min</li>
+              <li data-i18n="filters.carbon.details.capacity">Capacity: 6 months</li>
+              <li data-i18n="filters.carbon.details.stages">Stages: 3</li>
+              <li data-i18n="filters.carbon.details.housing">Housing: Food-grade ABS</li>
+              <li data-i18n="filters.carbon.details.ideal">Ideal for: City tap water</li>
+            </ul>
+            <h4 data-i18n="labels.removes">Removes</h4>
+            <ul>
+              <li data-i18n="filters.carbon.removes.one">Chlorine taste & odor</li>
+              <li data-i18n="filters.carbon.removes.two">Organic compounds (VOC)</li>
+              <li data-i18n="filters.carbon.removes.three">Rust particles</li>
+            </ul>
+          </div>
+          <div>
+            <h4 data-i18n="labels.stages">Stages</h4>
+            <ol>
+              <li data-i18n="filters.carbon.stages.one">Sediment pre-filter removes rust and sand.</li>
+              <li data-i18n="filters.carbon.stages.two">Activated carbon reduces chlorine and odor.</li>
+              <li data-i18n="filters.carbon.stages.three">Polishing carbon improves taste.</li>
+            </ol>
+            <h4 data-i18n="labels.maintenance">Maintenance</h4>
+            <ul>
+              <li data-i18n="filters.carbon.maint.one">Replace every 6 months</li>
+              <li data-i18n="filters.carbon.maint.two">Rinse housing at each change</li>
+            </ul>
+          </div>
+        </div>
+        <div class="filter-card-thumb">
+          <img class="filter-card-img" src="مراحل الفلتر/فلتر كربو شيلد.jpeg" alt="">
+        </div>
+      </article>
+
+      <!-- Type: Reverse Osmosis (RO) -->
+      <article class="filter-card">
+        <div class="popup" data-i18n="filters.ro.popup">RO system for high TDS & heavy metals. Best for hard or well water.</div>
+        <h3 data-i18n="filters.ro.name">Aqua RO Pro</h3>
+        <p class="filter-note" data-i18n="filters.ro.note">For heavy contaminants and high TDS water.</p>
+        <div class="filter-details">
+          <div>
+            <h4 data-i18n="labels.key_details">Key Details</h4>
+            <ul>
+              <li data-i18n="filters.ro.details.flow">Flow rate: 1.8 L/min</li>
+              <li data-i18n="filters.ro.details.capacity">Capacity: 12 months</li>
+              <li data-i18n="filters.ro.details.stages">Stages: 4</li>
+              <li data-i18n="filters.ro.details.membrane">Membrane: 75 GPD</li>
+              <li data-i18n="filters.ro.details.ideal">Ideal for: Well water, hard water</li>
+            </ul>
+            <h4 data-i18n="labels.removes">Removes</h4>
+            <ul>
+              <li data-i18n="filters.ro.removes.one">Dissolved salts (TDS)</li>
+              <li data-i18n="filters.ro.removes.two">Heavy metals</li>
+              <li data-i18n="filters.ro.removes.three">Nitrates</li>
+            </ul>
+          </div>
+          <div>
+            <h4 data-i18n="labels.stages">Stages</h4>
+            <ol>
+              <li data-i18n="filters.ro.stages.one">PP sediment filter blocks particles.</li>
+              <li data-i18n="filters.ro.stages.two">Granular carbon removes chlorine.</li>
+              <li data-i18n="filters.ro.stages.three">RO membrane reduces TDS and metals.</li>
+              <li data-i18n="filters.ro.stages.four">Post-carbon polishes flavor.</li>
+            </ol>
+            <h4 data-i18n="labels.maintenance">Maintenance</h4>
+            <ul>
+              <li data-i18n="filters.ro.maint.one">Pre-filters every 6 months</li>
+              <li data-i18n="filters.ro.maint.two">RO membrane every 18-24 months</li>
+            </ul>
+          </div>
+        </div>
+        <div class="filter-card-thumb">
+          <img class="filter-card-img" src="مراحل الفلتر/فلتر اكوا ار برو.jpeg" alt="">
+        </div>
+      </article>
+
+      <!-- Type: UV Filter -->
+      <article class="filter-card">
+        <div class="popup" data-i18n="filters.uv.popup">UV protection against bacteria & microbes. Good for mixed sources.</div>
+        <h3 data-i18n="filters.uv.name">UV Pure Guard</h3>
+        <p class="filter-note" data-i18n="filters.uv.note">Focused on bacteria and microorganism protection.</p>
+        <div class="filter-details">
+          <div>
+            <h4 data-i18n="labels.key_details">Key Details</h4>
+            <ul>
+              <li data-i18n="filters.uv.details.flow">Flow rate: 2.0 L/min</li>
+              <li data-i18n="filters.uv.details.life">UV lamp life: 9,000 hrs</li>
+              <li data-i18n="filters.uv.details.stages">Stages: 3</li>
+              <li data-i18n="filters.uv.details.power">Power: 11W UV-C</li>
+              <li data-i18n="filters.uv.details.ideal">Ideal for: Mixed sources</li>
+            </ul>
+            <h4 data-i18n="labels.removes">Removes</h4>
+            <ul>
+              <li data-i18n="filters.uv.removes.one">Bacteria & viruses</li>
+              <li data-i18n="filters.uv.removes.two">Algae spores</li>
+              <li data-i18n="filters.uv.removes.three">Odor-causing microbes</li>
+            </ul>
+          </div>
+          <div>
+            <h4 data-i18n="labels.stages">Stages</h4>
+            <ol>
+              <li data-i18n="filters.uv.stages.one">Sediment pre-filter clears turbidity.</li>
+              <li data-i18n="filters.uv.stages.two">Carbon filter removes odor and organics.</li>
+              <li data-i18n="filters.uv.stages.three">UV chamber neutralizes bacteria.</li>
+            </ol>
+            <h4 data-i18n="labels.maintenance">Maintenance</h4>
+            <ul>
+              <li data-i18n="filters.uv.maint.one">Replace UV lamp yearly</li>
+              <li data-i18n="filters.uv.maint.two">Clean quartz sleeve every 6 months</li>
+            </ul>
+          </div>
+        </div>
+        <div class="filter-card-thumb">
+          <img class="filter-card-img" src="مراحل الفلتر/فلتر يو في بيور.jpeg" alt="">
+        </div>
+      </article>
+    </div>
+
+    <div class="coolers-more-wrap">
+<<<<<<< HEAD
+      <a class="cooler-cta cooler-more-btn cta-with-hint" href="#filter-stages" data-i18n="filters.cta.more">
+=======
+      <a class="cooler-cta cooler-more-btn cta-with-hint" href="#services" data-i18n="filters.cta.more">
+>>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
+        <span data-i18n="filters.cta.more">View More</span>
+        <span class="cta-hover-hint" data-i18n="cta.more_details">تفاصيل اكثر</span>
+      </a>
+    </div>
+  </section>
+
+<!-- سكشن معلومات عن مراحل الفلتر -->
+<!-- سكشن معلومات عن مراحل الفلتر -->
+<<<<<<< HEAD
+  <section id="filter-stages" class="filter-steps">
+
+    <div class="section-header">
+      <h2 data-i18n="section.steps.title">مراحل الفلتر </h2>
+
+=======
+  <section id="services" class="filter-steps">
+    
+    <div class="section-header">
+      <h2 data-i18n="section.steps.title">مراحل الفلتر </h2>
+    
+>>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
+    </div>
+    <div class="steps-slider">
+      <button type="button" class="steps-nav steps-nav-prev" aria-label="Previous stages">&#10094;</button>
+      <div class="steps-track">
+      <!-- المرحلة الأولى  -->
+      <div class="first-step">
+        <img src="مراحل الفلتر/مرحله 1.png" alt="First step of filter stages" data-i18n-alt="section.steps.first_step_alt">
+        <h3 data-i18n="section.steps.first_step_title">Pre-Filter Stage</h3>
+        <div class="step-desc">
+          <ol class="step-qa">
+            <li>
+              <span data-i18n="section.steps.q.what">وظيفتها إيه؟</span>
+              <ul>
+                <li data-i18n="section.steps.first_step_desc">First line of defense that removes sand, rust, dust, and large particles to protect the rest of the filter stages.</li>
+              </ul>
+            </li>
+            <li>
+              <span data-i18n="section.steps.q.benefit">الفايدة الأساسية؟</span>
+              <ul>
+                <li data-i18n="section.steps.first_step_benefit">Protects inner stages from early clogging and extends the full system lifespan.</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- المرحلة الثانية  -->
+      <div class="second-step">
+        <img src="مراحل الفلتر/مرحله 2.png" alt="Second step of filter stages" data-i18n-alt="section.steps.second_step_alt">
+        <h3 data-i18n="section.steps.second_step_title">Carbon Filter Stage</h3>
+        <div class="step-desc">
+          <ol class="step-qa">
+            <li>
+              <span data-i18n="section.steps.q.what">وظيفتها إيه؟</span>
+              <ul>
+                <li data-i18n="section.steps.second_step_desc">Activated carbon absorbs chlorine and chemical residues, improving taste and odor while protecting the RO membrane from chlorine damage.</li>
+              </ul>
+            </li>
+            <li>
+              <span data-i18n="section.steps.q.benefit">الفايدة الأساسية؟</span>
+              <ul>
+                <li data-i18n="section.steps.second_step_benefit">Improves water flavor and smell while reducing chemical load before deep filtration.</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- المرحلة الثالثة  -->
+      <div class="third-step">
+        <img src="مراحل الفلتر/مرحله 3.png" alt="Third step of filter stages" data-i18n-alt="section.steps.third_step_alt">
+<<<<<<< HEAD
+        <h3 data-i18n="section.steps.third_step_title">Third Stage</h3>
+=======
+        <h3 data-i18n="section.steps.third_step_title">Third Stage</h3> 
+>>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
+        <div class="step-desc">
+          <ol class="step-qa">
+            <li>
+              <span data-i18n="section.steps.q.what">وظيفتها إيه؟</span>
+              <ul>
+                <li data-i18n="section.steps.third_step_desc">A tighter carbon polishing stage that removes remaining chlorine traces and fine organic compounds before water reaches the membrane.</li>
+              </ul>
+            </li>
+            <li>
+              <span data-i18n="section.steps.q.benefit">الفايدة الأساسية؟</span>
+              <ul>
+                <li data-i18n="section.steps.third_step_benefit">Prepares water for RO with cleaner input and better filtration efficiency.</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+
+      </div>
+      <!-- المرحلة الرابعة  -->
+      <div class="fourth-step">
+          <img src="مراحل الفلتر/مرحله 4.png" alt="Fourth step of filter stages" data-i18n-alt="section.steps.fourth_step_alt">
+          <h3 data-i18n="section.steps.fourth_step_title">RO Membrane Stage</h3>
+          <div class="step-desc">
+            <ol class="step-qa">
+              <li>
+                <span data-i18n="section.steps.q.what">وظيفتها إيه؟</span>
+                <ul>
+                  <li data-i18n="section.steps.fourth_step_desc">The RO membrane performs deep filtration, reducing salts, heavy metals, and microorganisms to deliver highly purified drinking water.</li>
+                </ul>
+              </li>
+              <li>
+                <span data-i18n="section.steps.q.benefit">الفايدة الأساسية؟</span>
+                <ul>
+                  <li data-i18n="section.steps.fourth_step_benefit">Provides the strongest purification stage and significantly lowers dissolved contaminants.</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+      </div>
+      <!-- المرحلة الخامسة  -->
+      <div class="fifth-step">
+<<<<<<< HEAD
+          <img src="مراحل الفلتر/مرحله 5.png" alt="Fifth step of filter stages" data-i18n-alt="section.steps.fifth_step_alt">
+=======
+          <img src="مراحل الفلتر/مرحله 5.png" alt="Fifth step of filter stages" data-i18n-alt="section.steps.fifth_step_alt">   
+>>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
+          <h3 data-i18n="section.steps.fifth_step_title">Final Carbon Stage</h3>
+          <div class="step-desc">
+            <ol class="step-qa">
+              <li>
+                <span data-i18n="section.steps.q.what">وظيفتها إيه؟</span>
+                <ul>
+                  <li data-i18n="section.steps.fifth_step_desc">Post-carbon treatment refines flavor after tank storage and removes any residual storage odor for a cleaner final taste.</li>
+                </ul>
+              </li>
+              <li>
+                <span data-i18n="section.steps.q.benefit">الفايدة الأساسية؟</span>
+                <ul>
+                  <li data-i18n="section.steps.fifth_step_benefit">Delivers a smoother drinking taste and cleaner smell at the final output.</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+      </div>
+      <!-- المرحلة السادسة  -->
+      <div class="sixth-step">
+<<<<<<< HEAD
+          <img src="مراحل الفلتر/مرحله 6.png" alt="Sixth step of filter stages" data-i18n-alt="section.steps.sixth_step_alt">
+          <h3 data-i18n="section.steps.sixth_step_title">Mineral Stage</h3>
+=======
+          <img src="مراحل الفلتر/مرحله 6.png" alt="Sixth step of filter stages" data-i18n-alt="section.steps.sixth_step_alt">   
+          <h3 data-i18n="section.steps.sixth_step_title">Mineral Stage</h3> 
+>>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
+          <div class="step-desc">
+            <ol class="step-qa">
+              <li>
+                <span data-i18n="section.steps.q.what">وظيفتها إيه؟</span>
+                <ul>
+                  <li data-i18n="section.steps.sixth_step_desc">Re-mineralization restores useful minerals like calcium and magnesium to balance taste and support healthy daily hydration.</li>
+                </ul>
+              </li>
+              <li>
+                <span data-i18n="section.steps.q.benefit">الفايدة الأساسية؟</span>
+                <ul>
+                  <li data-i18n="section.steps.sixth_step_benefit">Balances water profile after RO and improves daily drinking quality.</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+      </div>
+      <!-- المرحلة السابعة  -->
+      <div class="seventh-step">
+<<<<<<< HEAD
+          <img src="مراحل الفلتر/مرحله 7.png" alt="Seventh step of filter stages" data-i18n-alt="section.steps.seventh_step_alt">
+=======
+          <img src="مراحل الفلتر/مرحله 7.png" alt="Seventh step of filter stages" data-i18n-alt="section.steps.seventh_step_alt">   
+>>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
+          <h3 data-i18n="section.steps.seventh_step_title">Final Sterilization Stage</h3>
+          <div class="step-desc">
+            <ol class="step-qa">
+              <li>
+                <span data-i18n="section.steps.q.what">وظيفتها إيه؟</span>
+                <ul>
+                  <li data-i18n="section.steps.seventh_step_desc">UV sterilization provides a final safety layer by neutralizing remaining microbes without adding chemicals.</li>
+                </ul>
+              </li>
+              <li>
+                <span data-i18n="section.steps.q.benefit">الفايدة الأساسية؟</span>
+                <ul>
+                  <li data-i18n="section.steps.seventh_step_benefit">Adds extra microbiological safety for more reliable drinking water.</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+      </div>
+      </div>
+      <button type="button" class="steps-nav steps-nav-next" aria-label="Next stages">&#10095;</button>
+    </div>
+
+  </section>
+<!-- سكشن أنواع البرادات -->
+  <section id="coolers" class="filters coolers">
+    <div class="section-header">
+      <h2 data-i18n="section.coolers.title">Cooler Types</h2>
+      <p data-i18n="section.coolers.subtitle">Choose the most suitable cooler for your space and daily usage.</p>
+    </div>
+
+    <div class="filter-grid cooler-grid">
+      <article class="filter-card cooler-card">
+        <div class="popup" data-i18n="coolers.countertop.popup">A compact cooler with hot and cold output, ideal for desks and reception areas.</div>
+        <h3 data-i18n="coolers.countertop.name">Countertop Cooler</h3>
+        <p class="filter-note" data-i18n="coolers.countertop.note">Space-saving model with practical performance for offices and small spaces.</p>
+        <div class="filter-card-thumb">
+          <img class="filter-card-img" src="photo/photo to nano tech/WhatsApp Image 2026-02-20 at 1.18.00 PM.jpeg" alt="Countertop water cooler" data-i18n-alt="coolers.countertop.image_alt">
+        </div>
+      </article>
+
+      <article class="filter-card cooler-card">
+        <div class="popup" data-i18n="coolers.freestanding.popup">A high-capacity standing cooler suitable for homes, clinics, and office floors.</div>
+        <h3 data-i18n="coolers.freestanding.name">Freestanding Cooler</h3>
+        <p class="filter-note" data-i18n="coolers.freestanding.note">Balanced flow and larger size for families and medium to high daily consumption.</p>
+        <div class="filter-card-thumb">
+          <img class="filter-card-img" src="photo/photo to nano tech/براده قائمه.jpeg" alt="Freestanding water cooler" data-i18n-alt="coolers.freestanding.image_alt">
+        </div>
+      </article>
+
+      <article class="filter-card cooler-card">
+        <div class="popup" data-i18n="coolers.bottom_load.popup">Bottom-load design keeps the look clean and makes bottle replacement easier.</div>
+        <h3 data-i18n="coolers.bottom_load.name">Bottom-Load Cooler</h3>
+        <p class="filter-note" data-i18n="coolers.bottom_load.note">Modern design with hidden bottle cabinet and easy loading without heavy lifting.</p>
+        <div class="filter-card-thumb">
+          <img class="filter-card-img" src="photo/photo to nano tech/براده قائمه تحميل سفلي.jpeg" alt="Bottom-load water cooler" data-i18n-alt="coolers.bottom_load.image_alt">
+        </div>
+      </article>
+    </div>
+
+    <div class="coolers-more-wrap">
+      <a class="cooler-cta cooler-more-btn cta-with-hint" href="coolers-details.html" data-i18n="coolers.cta.more">
+        <span data-i18n="coolers.cta.more">View More</span>
+        <span class="cta-hover-hint" data-i18n="cta.more_details">تفاصيل اكثر</span>
+      </a>
+    </div>
+  </section>
+<<<<<<< HEAD
+  <section id="contact" class="contact-section">
+    <div class="contact-copy">
+      <p class="contact-kicker" data-i18n="section.contact.kicker">Support desk</p>
+      <h2 data-i18n="section.contact.title">Contact Us</h2>
+      <p data-i18n="section.contact.text">Reach us anytime for installation, maintenance, and support.</p>
+    </div>
+
+    <div class="contact-panel">
+      <div class="contact-methods" aria-label="Contact methods">
+        <a class="contact-method" href="tel:+201019213914">
+          <span class="contact-icon" aria-hidden="true">☎</span>
+          <span>
+            <strong data-i18n="section.contact.call_title">Call us</strong>
+            <small>+20 1019213914</small>
+          </span>
+        </a>
+
+        <a class="contact-method" href="https://wa.me/201019213914" target="_blank" rel="noopener noreferrer">
+          <span class="contact-icon" aria-hidden="true">↗</span>
+          <span>
+            <strong data-i18n="section.contact.whatsapp_title">WhatsApp</strong>
+            <small data-i18n="section.contact.whatsapp_text">Fast product and maintenance replies</small>
+          </span>
+        </a>
+
+        <a class="contact-method" href="mailto:info@safi-water.com">
+          <span class="contact-icon" aria-hidden="true">@</span>
+          <span>
+            <strong data-i18n="section.contact.mail_title">Email</strong>
+            <small>info@safi-water.com</small>
+          </span>
+        </a>
+      </div>
+
+      <form class="contact-form" action="mailto:info@safi-water.com" method="post" enctype="text/plain">
+        <label>
+          <span data-i18n="section.contact.form_name">Name</span>
+          <input type="text" name="name" autocomplete="name" required>
+        </label>
+        <label>
+          <span data-i18n="section.contact.form_phone">Phone</span>
+          <input type="tel" name="phone" autocomplete="tel" required>
+        </label>
+        <label>
+          <span data-i18n="section.contact.form_service">Service</span>
+          <select name="service">
+            <option data-i18n="section.contact.service_install">Filter installation</option>
+            <option data-i18n="section.contact.service_maintenance">Maintenance visit</option>
+            <option data-i18n="section.contact.service_cooler">Cooler consultation</option>
+          </select>
+        </label>
+        <button type="submit" data-i18n="section.contact.form_submit">Send request</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-shell">
+    <div class="footer-brand-panel">
+      <a class="footer-logo-link" href="#home" aria-label="safi">
+        <img class="footer-logo" src="photo/logo safi_1.png" alt="safi logo">
+      </a>
+      <div>
+        <p class="footer-brand-name">safi</p>
+        <p class="footer-brand-text" data-i18n="footer.brand.text">Clean water systems, filter maintenance, and practical cooler solutions for homes and workplaces.</p>
+      </div>
+    </div>
+
+    <div class="footer-content">
+      <div class="footer-column">
+        <h2 data-i18n="footer.links.title">Explore</h2>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#home" data-i18n="nav.home">Home</a>
+          <a href="./all-products.html" data-i18n="nav.products">Products</a>
+          <a href="./services.html" data-i18n="nav.services">Services</a>
+          <a href="#coolers" data-i18n="nav.coolers">Coolers</a>
+        </nav>
+      </div>
+
+      <div class="footer-column">
+        <h2 data-i18n="footer.services.title">Services</h2>
+        <ul class="footer-list">
+          <li data-i18n="footer.services.installation">Filter installation</li>
+          <li data-i18n="footer.services.maintenance">Scheduled maintenance</li>
+          <li data-i18n="footer.services.coolers">Cooler consultation</li>
+          <li data-i18n="footer.services.support">After-sales support</li>
+        </ul>
+      </div>
+
+      <div class="footer-column footer-contact">
+        <h2 data-i18n="footer.contact.title">Contact</h2>
+        <a href="tel:+201019213914">+20 1019213914</a>
+        <a href="mailto:info@safi-water.com">info@safi-water.com</a>
+        <span data-i18n="footer.contact.location">Cairo, Egypt</span>
+        <div class="footer-social" aria-label="Quick contact links">
+          <a href="tel:+201019213914" aria-label="Call safi" data-i18n="footer.contact.call">Call</a>
+          <a href="mailto:info@safi-water.com" aria-label="Email safi" data-i18n="footer.contact.mail">Mail</a>
+          <a href="https://wa.me/201019213914" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp safi" data-i18n="footer.contact.whatsapp">Wa</a>
+        </div>
+      </div>
+
+      <div class="footer-cta">
+        <p data-i18n="footer.cta.title">Need help choosing the right system?</p>
+        <a href="#contact" data-i18n="footer.cta.link">Request advice</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        <span data-i18n="footer.rights.prefix">All rights reserved</span>
+        <span class="footer-year">2026</span>
+        <span>safi</span>
+      </p>
+      <a href="#home" data-i18n="footer.back_top">Back to top</a>
+    </div>
+  </div>
+</footer>
+=======
+
+
+
+  <section id="contact" class="section-header">
+    <h2 data-i18n="section.contact.title">Contact Us</h2>
+    <p data-i18n="section.contact.text">Reach us anytime for installation, maintenance, and support.</p>
+  </section>
+
+  
+</main>
+
+<script>
+  window.COMPANY_NAME = {
+    en: "safi",
+    ar: "صافي"
+  };
+
+  window.APP_TRANSLATIONS = {
+    en: {
+      "meta.title": "safi",
+      "nav.home": "Home",
+      "nav.products": "Products",
+      "nav.services": "Services",
+      "nav.contact": "Contact",
+      "nav.login": "Login",
+      "nav.register": "Register",
+      "nav.menu": "Menu",
+      "nav.order": "Order Now",
+      "section.title": "Our Filter Lineup",
+      "section.subtitle": "Explore each filter and its purification stages so you can choose the right fit for your water needs.",
+      "nav.coolers": "Coolers",
+      "section.coolers.title": "Cooler Types",
+      "section.coolers.subtitle": "Choose the most suitable cooler for your space and daily usage.",
+      "coolers.countertop.popup": "A compact cooler with hot and cold output, ideal for desks and reception areas.",
+      "coolers.countertop.name": "Countertop Cooler",
+      "coolers.countertop.note": "Space-saving model with practical performance for offices and small spaces.",
+      "coolers.countertop.image_alt": "Countertop water cooler",
+      "coolers.freestanding.popup": "A high-capacity standing cooler suitable for homes, clinics, and office floors.",
+      "coolers.freestanding.name": "Freestanding Cooler",
+      "coolers.freestanding.note": "Balanced flow and larger size for families and medium to high daily consumption.",
+      "coolers.freestanding.image_alt": "Freestanding water cooler",
+      "coolers.bottom_load.popup": "Bottom-load design keeps the look clean and makes bottle replacement easier.",
+      "coolers.bottom_load.name": "Bottom-Load Cooler",
+      "coolers.bottom_load.note": "Modern design with hidden bottle cabinet and easy loading without heavy lifting.",
+      "coolers.bottom_load.image_alt": "Bottom-load water cooler",
+      "coolers.cta.more": "View More",
+      "filters.cta.more": "View More",
+      "cta.more_details": "More details",
+      "section.contact.title": "Contact Us",
+      "section.contact.text": "Reach us anytime for installation, maintenance, and support.",
+      "section.stage_filters.title_main": "Filter Types",
+      "section.stage_filters.title_hint": "By Number of Stages",
+      "section.stages.title": "7-Stage Filter System",
+      "section.stages.subtitle": "See every stage and what it does to improve your water quality.",
+      "section.stages.image_alt": "Illustration of 7-stage water filter",
+      "section.five_stages.title": "5-Stage Filter System",
+      "section.five_stages.subtitle": "A compact 5-stage purifier that improves taste, reduces chlorine, and provides clean water for everyday use.",
+      "section.five_stages.image_alt": "Illustration of 5-stage water filter",
+      "section.third_stages.title": "3-Stage Filter System",
+      "section.third_stages.subtitle": "A practical 3-stage filter for everyday use that improves taste, reduces chlorine, and removes common impurities.",
+      "section.third_stages.image_alt": "Illustration of 3-stage water filter",
+      "section.whole_house.title": "Whole House Water Filter",
+      "section.whole_house.subtitle": "A central filtration system that purifies water at the main entry point to protect every tap, shower, and appliance.",
+      "section.whole_house.image_alt": "Illustration of whole house water filter",
+      "section.offers.title": "Company Offers",
+      "section.steps.title": "Filter Stages",
+      "section.steps.first_step_title": "Pre-Filter Stage",
+      "section.steps.second_step_title": "Carbon Filter Stage",
+      "section.steps.third_step_title": "Fine Carbon Stage",
+      "section.steps.fourth_step_title": "RO Membrane Stage",
+      "section.steps.fifth_step_title": "Final Carbon Stage",
+      "section.steps.sixth_step_title": "Mineral Stage",
+      "section.steps.seventh_step_title": "Final Sterilization Stage",
+      "section.steps.first_step_alt": "First stage of filter system",
+      "section.steps.second_step_alt": "Second stage of filter system",
+      "section.steps.third_step_alt": "Third stage of filter system",
+      "section.steps.fourth_step_alt": "Fourth stage of filter system",
+      "section.steps.fifth_step_alt": "Fifth stage of filter system",
+      "section.steps.sixth_step_alt": "Sixth stage of filter system",
+      "section.steps.seventh_step_alt": "Seventh stage of filter system",
+      "section.steps.first_step_desc": "First line of defense that removes sand, rust, dust, and large particles to protect the rest of the filter stages.",
+      "section.steps.second_step_desc": "Activated carbon absorbs chlorine and chemical residues, improving taste and odor while protecting the RO membrane from chlorine damage.",
+      "section.steps.third_step_desc": "A tighter carbon polishing stage that removes remaining chlorine traces and fine organic compounds before water reaches the membrane.",
+      "section.steps.fourth_step_desc": "The RO membrane performs deep filtration, reducing salts, heavy metals, and microorganisms to deliver highly purified drinking water.",
+      "section.steps.fifth_step_desc": "Post-carbon treatment refines flavor after tank storage and removes any residual storage odor for a cleaner final taste.",
+      "section.steps.sixth_step_desc": "Re-mineralization restores useful minerals like calcium and magnesium to balance taste and support healthy daily hydration.",
+      "section.steps.seventh_step_desc": "UV sterilization provides a final safety layer by neutralizing remaining microbes without adding chemicals.",
+      "section.steps.q.what": "What does this stage do?",
+      "section.steps.q.benefit": "Main benefit?",
+      "section.steps.first_step_benefit": "Protects inner stages from early clogging and extends the full system lifespan.",
+      "section.steps.second_step_benefit": "Improves water flavor and smell while reducing chemical load before deep filtration.",
+      "section.steps.third_step_benefit": "Prepares water for RO with cleaner input and better filtration efficiency.",
+      "section.steps.fourth_step_benefit": "Provides the strongest purification stage and significantly lowers dissolved contaminants.",
+      "section.steps.fifth_step_benefit": "Delivers a smoother drinking taste and cleaner smell at the final output.",
+      "section.steps.sixth_step_benefit": "Balances water profile after RO and improves daily drinking quality.",
+      "section.steps.seventh_step_benefit": "Adds extra microbiological safety for more reliable drinking water.",
+      "labels.key_details": "Key Details",
+      "labels.removes": "Removes",
+      "labels.stages": "Stages",
+      "labels.maintenance": "Maintenance",
+      "filters.carbon.popup": "Carbon filter for taste & odor. Great for city tap water.",
+      "filters.carbon.name": "Carbon Shield Filter",
+      "filters.carbon.note": "Best for taste, odor, and chlorine removal.",
+      "filters.carbon.details.flow": "Flow rate: 2.5 L/min",
+      "filters.carbon.details.capacity": "Capacity: 6 months",
+      "filters.carbon.details.stages": "Stages: 3",
+      "filters.carbon.details.housing": "Housing: Food-grade ABS",
+      "filters.carbon.details.ideal": "Ideal for: City tap water",
+      "filters.carbon.removes.one": "Chlorine taste & odor",
+      "filters.carbon.removes.two": "Organic compounds (VOC)",
+      "filters.carbon.removes.three": "Rust particles",
+      "filters.carbon.stages.one": "Sediment pre-filter removes rust and sand.",
+      "filters.carbon.stages.two": "Activated carbon reduces chlorine and odor.",
+      "filters.carbon.stages.three": "Polishing carbon improves taste.",
+      "filters.carbon.maint.one": "Replace every 6 months",
+      "filters.carbon.maint.two": "Rinse housing at each change",
+      "filters.ro.popup": "RO system for high TDS & heavy metals. Best for hard or well water.",
+      "filters.ro.name": "Aqua RO Pro",
+      "filters.ro.note": "For heavy contaminants and high TDS water.",
+      "filters.ro.details.flow": "Flow rate: 1.8 L/min",
+      "filters.ro.details.capacity": "Capacity: 12 months",
+      "filters.ro.details.stages": "Stages: 4",
+      "filters.ro.details.membrane": "Membrane: 75 GPD",
+      "filters.ro.details.ideal": "Ideal for: Well water, hard water",
+      "filters.ro.removes.one": "Dissolved salts (TDS)",
+      "filters.ro.removes.two": "Heavy metals",
+      "filters.ro.removes.three": "Nitrates",
+      "filters.ro.stages.one": "PP sediment filter blocks particles.",
+      "filters.ro.stages.two": "Granular carbon removes chlorine.",
+      "filters.ro.stages.three": "RO membrane reduces TDS and metals.",
+      "filters.ro.stages.four": "Post-carbon polishes flavor.",
+      "filters.ro.maint.one": "Pre-filters every 6 months",
+      "filters.ro.maint.two": "RO membrane every 18-24 months",
+      "filters.uv.popup": "UV protection against bacteria & microbes. Good for mixed sources.",
+      "filters.uv.name": "UV Pure Guard",
+      "filters.uv.note": "Focused on bacteria and microorganism protection.",
+      "filters.uv.details.flow": "Flow rate: 2.0 L/min",
+      "filters.uv.details.life": "UV lamp life: 9,000 hrs",
+      "filters.uv.details.stages": "Stages: 3",
+      "filters.uv.details.power": "Power: 11W UV-C",
+      "filters.uv.details.ideal": "Ideal for: Mixed sources",
+      "filters.uv.removes.one": "Bacteria & viruses",
+      "filters.uv.removes.two": "Algae spores",
+      "filters.uv.removes.three": "Odor-causing microbes",
+      "filters.uv.stages.one": "Sediment pre-filter clears turbidity.",
+      "filters.uv.stages.two": "Carbon filter removes odor and organics.",
+      "filters.uv.stages.three": "UV chamber neutralizes bacteria.",
+      "filters.uv.maint.one": "Replace UV lamp yearly",
+      "filters.uv.maint.two": "Clean quartz sleeve every 6 months"
+    },
+    ar: {
+      "meta.title": "صافي",
+      "nav.home": "الرئيسية",
+      "nav.products": "المنتجات",
+      "nav.services": "الخدمات",
+      "nav.contact": "تواصل معنا",
+      "nav.login": "تسجيل الدخول",
+      "nav.register": "حساب جديد",
+      "nav.menu": "القائمة",
+      "nav.order": "اطلب الآن",
+      "section.title": "مجموعة الفلاتر",
+      "section.subtitle": "استكشف كل فلتر ومراحل التنقية لاختيار الأنسب لمياهك.",
+      "nav.coolers": "البرادات",
+      "section.coolers.title": "أنواع البرادات",
+      "section.coolers.subtitle": "اختر البراد الأنسب للمساحة والاستهلاك اليومي.",
+      "coolers.countertop.popup": "براد مدمج بمخارج ساخن وبارد، مناسب للمكاتب والاستقبال.",
+      "coolers.countertop.name": "براد سطح مكتب",
+      "coolers.countertop.note": "حجم عملي يوفر المساحة مع أداء ثابت للاستخدام اليومي في الأماكن الصغيرة.",
+      "coolers.countertop.image_alt": "براد مياه سطح مكتب",
+      "coolers.freestanding.popup": "براد قائم بسعة أعلى مناسب للمنازل والعيادات ومواقع العمل.",
+      "coolers.freestanding.name": "براد قائم",
+      "coolers.freestanding.note": "تدفق متوازن وحجم أكبر مناسب للعائلات والاستخدام اليومي المكثف.",
+      "coolers.freestanding.image_alt": "براد مياه قائم",
+      "coolers.bottom_load.popup": "تصميم التحميل السفلي يعطي شكل أنظف ويسهّل تبديل العبوة.",
+      "coolers.bottom_load.name": "براد تحميل سفلي",
+      "coolers.bottom_load.note": "تصميم حديث بخزانة عبوة مخفية وتبديل أسهل بدون رفع ثقيل.",
+      "coolers.bottom_load.image_alt": "براد مياه تحميل سفلي",
+      "coolers.cta.more": "عرض المزيد",
+      "filters.cta.more": "عرض المزيد",
+      "cta.more_details": "تفاصيل اكثر",
+      "section.contact.title": "تواصل معنا",
+      "section.contact.text": "تواصل معنا في أي وقت لخدمات التركيب والصيانة والدعم.",
+      "section.stage_filters.title_main": "أنواع الفلاتر",
+      "section.stage_filters.title_hint": "حسب عدد المراحل",
+      "section.stages.title": "الفلتر 7 مراحل",
+      "section.stages.subtitle": "شاهد كل مرحلة ودورها في تحسين جودة المياه.",
+      "section.stages.image_alt": "صورة توضيحية لفلتر 7 مراحل",
+      "section.five_stages.title": "الفلتر 5 مراحل",
+      "section.five_stages.subtitle": "فلتر مدمج من 5 مراحل يحسن الطعم ويقلل الكلور ويوفر مياه نقية للاستخدام اليومي.",
+      "section.five_stages.image_alt": "صورة توضيحية لفلتر 5 مراحل",
+      "section.third_stages.title": "الفلتر 3 مراحل",
+      "section.third_stages.subtitle": "فلتر عملي من 3 مراحل للاستخدام اليومي، يحسن الطعم ويقلل الكلور ويزيل الشوائب الشائعة.",
+      "section.third_stages.image_alt": "صورة توضيحية لفلتر 3 مراحل",
+      "section.whole_house.title": "الفلتر المركزي للمياه",
+      "section.whole_house.subtitle": "نظام ترشيح مركزي ينقّي المياه عند نقطة الدخول الرئيسية لحماية كل الحنفيات والدش والأجهزة في المنزل.",
+      "section.whole_house.image_alt": "صورة توضيحية لفلتر المياه المركزي",
+      "section.offers.title": "العروض المقدمة من الشركة",
+      "section.steps.title": "مراحل الفلتر",
+      "section.steps.first_step_title": "مرحلة الفلتر المبدئي",
+      "section.steps.second_step_title": "مرحلة الكربون النشط",
+      "section.steps.third_step_title": "مرحلة الكربون الدقيق",
+      "section.steps.fourth_step_title": "مرحلة غشاء RO",
+      "section.steps.fifth_step_title": "مرحلة الكربون النهائي",
+      "section.steps.sixth_step_title": "مرحلة المعادن",
+      "section.steps.seventh_step_title": "مرحلة التعقيم النهائي",
+      "section.steps.first_step_alt": "المرحلة الأولى من نظام الفلتر",
+      "section.steps.second_step_alt": "المرحلة الثانية من نظام الفلتر",
+      "section.steps.third_step_alt": "المرحلة الثالثة من نظام الفلتر",
+      "section.steps.fourth_step_alt": "المرحلة الرابعة من نظام الفلتر",
+      "section.steps.fifth_step_alt": "المرحلة الخامسة من نظام الفلتر",
+      "section.steps.sixth_step_alt": "المرحلة السادسة من نظام الفلتر",
+      "section.steps.seventh_step_alt": "المرحلة السابعة من نظام الفلتر",
+      "section.steps.first_step_desc": "هي خط الدفاع الأول؛ تزيل الرمال والصدأ والأتربة والجزيئات الكبيرة لتحمي باقي مراحل الفلتر من الانسداد المبكر.",
+      "section.steps.second_step_desc": "الكربون النشط يمتص الكلور وبقايا المواد الكيميائية، فيحسن الطعم والرائحة ويحمي غشاء RO من تأثير الكلور.",
+      "section.steps.third_step_desc": "مرحلة كربون أدق تلتقط بقايا الكلور والمواد العضوية الدقيقة قبل وصول الماء إلى الغشاء الرئيسي.",
+      "section.steps.fourth_step_desc": "غشاء RO يقوم بالتنقية العميقة لتقليل الأملاح والمعادن الثقيلة والميكروبات، ويوفر ماءً عالي النقاء للشرب.",
+      "section.steps.fifth_step_desc": "كربون نهائي لتحسين الطعم بعد التخزين وإزالة أي رائحة خفيفة ناتجة عن الخزان.",
+      "section.steps.sixth_step_desc": "تعيد هذه المرحلة إضافة معادن مفيدة مثل الكالسيوم والمغنيسيوم لمذاق متوازن وشرب يومي أفضل.",
+      "section.steps.seventh_step_desc": "تعقيم بالأشعة فوق البنفسجية كطبقة أمان أخيرة للقضاء على أي ميكروبات متبقية بدون إضافة مواد كيميائية.",
+      "section.steps.q.what": "وظيفة المرحلة؟",
+      "section.steps.q.benefit": "الفايدة الأساسية؟",
+      "section.steps.first_step_benefit": "تحمي المراحل الداخلية من الانسداد المبكر وتطوّل عمر نظام الفلتر بالكامل.",
+      "section.steps.second_step_benefit": "تحسن الطعم والرائحة وتقلل الحمل الكيميائي قبل مرحلة التنقية العميقة.",
+      "section.steps.third_step_benefit": "تجهز الماء لمرحلة RO بكفاءة أعلى وجودة تنقية أفضل.",
+      "section.steps.fourth_step_benefit": "أقوى مرحلة تنقية وتقلل الملوثات الذائبة بشكل كبير.",
+      "section.steps.fifth_step_benefit": "تحسن الطعم النهائي وتزيل أي أثر لرائحة التخزين.",
+      "section.steps.sixth_step_benefit": "توازن خصائص الماء بعد RO وتحسن جودة الشرب اليومي.",
+      "section.steps.seventh_step_benefit": "تضيف أمانًا ميكروبيًا إضافيًا لمياه شرب أكثر موثوقية.",
+      "labels.key_details": "تفاصيل أساسية",
+      "labels.removes": "يزيل",
+      "labels.stages": "المراحل",
+      "labels.maintenance": "الصيانة",
+      "filters.carbon.popup": "فلتر كربوني للطعم والرائحة. مناسب لمياه المدينة.",
+      "filters.carbon.name": "فلتر كربون شيلد",
+      "filters.carbon.note": "الأفضل لتحسين الطعم وإزالة الكلور والرائحة.",
+      "filters.carbon.details.flow": "معدل التدفق: 2.5 لتر/دقيقة",
+      "filters.carbon.details.capacity": "العمر: 6 أشهر",
+      "filters.carbon.details.stages": "المراحل: 3",
+      "filters.carbon.details.housing": "الهيكل: بلاستيك غذائي",
+      "filters.carbon.details.ideal": "مثالي لـ: مياه المدينة",
+      "filters.carbon.removes.one": "طعم ورائحة الكلور",
+      "filters.carbon.removes.two": "مركبات عضوية متطايرة",
+      "filters.carbon.removes.three": "شوائب الصدأ",
+      "filters.carbon.stages.one": "فلتر الرواسب يزيل الرمل والصدأ.",
+      "filters.carbon.stages.two": "الكربون النشط يقلل الكلور والرائحة.",
+      "filters.carbon.stages.three": "كربون نهائي لتحسين الطعم.",
+      "filters.carbon.maint.one": "التغيير كل 6 أشهر",
+      "filters.carbon.maint.two": "غسل الهيكل عند كل تغيير",
+      "filters.ro.popup": "نظام RO للملوحة والمعادن الثقيلة. مناسب للمياه العسرة أو الآبار.",
+      "filters.ro.name": "أكوا آر أو برو",
+      "filters.ro.note": "للملوثات العالية ومياه TDS المرتفع.",
+      "filters.ro.details.flow": "معدل التدفق: 1.8 لتر/دقيقة",
+      "filters.ro.details.capacity": "العمر: 12 شهرًا",
+      "filters.ro.details.stages": "المراحل: 4",
+      "filters.ro.details.membrane": "الغشاء: 75 GPD",
+      "filters.ro.details.ideal": "مثالي لـ: مياه الآبار والعسرة",
+      "filters.ro.removes.one": "الأملاح الذائبة (TDS)",
+      "filters.ro.removes.two": "المعادن الثقيلة",
+      "filters.ro.removes.three": "النترات",
+      "filters.ro.stages.one": "فلتر رواسب PP يمنع الجسيمات.",
+      "filters.ro.stages.two": "كربون حبيبي يزيل الكلور.",
+      "filters.ro.stages.three": "غشاء RO يقلل الأملاح والمعادن.",
+      "filters.ro.stages.four": "كربون نهائي لتحسين الطعم.",
+      "filters.ro.maint.one": "الفلاتر الأولية كل 6 أشهر",
+      "filters.ro.maint.two": "غشاء RO كل 18-24 شهرًا",
+      "filters.uv.popup": "حماية UV ضد البكتيريا والميكروبات. مناسب لمصادر مختلفة.",
+      "filters.uv.name": "يو في بيور جارد",
+      "filters.uv.note": "يركز على الحماية من البكتيريا والكائنات الدقيقة.",
+      "filters.uv.details.flow": "معدل التدفق: 2.0 لتر/دقيقة",
+      "filters.uv.details.life": "عمر لمبة UV: 9,000 ساعة",
+      "filters.uv.details.stages": "المراحل: 3",
+      "filters.uv.details.power": "القدرة: 11 وات UV-C",
+      "filters.uv.details.ideal": "مثالي لـ: مصادر مختلطة",
+      "filters.uv.removes.one": "بكتيريا وفيروسات",
+      "filters.uv.removes.two": "جراثيم وطحالب",
+      "filters.uv.removes.three": "ميكروبات مسببة للرائحة",
+      "filters.uv.stages.one": "فلتر رواسب يقلل العكارة.",
+      "filters.uv.stages.two": "كربون لإزالة الروائح والمواد العضوية.",
+      "filters.uv.stages.three": "حجرة UV لتعقيم الماء.",
+      "filters.uv.maint.one": "تغيير لمبة UV سنويًا",
+      "filters.uv.maint.two": "تنظيف أنبوب الكوارتز كل 6 أشهر"
+    }
+  };
+
+  window.STAGE_DATA = {
+    en: [
+      { title: "Stage 1", img: "مراحل الفلتر/مرحله 1.png", desc: "Sediment filter removes sand, dust, and large particles." },
+      { title: "Stage 2", img: "مراحل الفلتر/مرحله 2.png", desc: "Activated carbon filter reduces chlorine and bad odors." },
+      { title: "Stage 3", img: "مراحل الفلتر/مرحله 3.png", desc: "Enhanced carbon filter improves taste." },
+      { title: "Stage 4", img: "مراحل الفلتر/مرحله 4.png", desc: "RO membrane lowers salts and heavy metals." },
+      { title: "Stage 5", img: "مراحل الفلتر/مرحله 5.png", desc: "Final carbon stage for cleaner taste and smell." },
+      { title: "Stage 6", img: "مراحل الفلتر/مرحله 6.png", desc: "Mineral stage adds useful minerals back to water." },
+      { title: "Stage 7", img: "مراحل الفلتر/مرحله 7.png", desc: "Final sterilization step for better overall water quality." }
+    ],
+    ar: [
+      { title: "المرحلة الأولى", img: "مراحل الفلتر/مرحله 1.png", desc: "فلتر رواسب لإزالة الرمال والأتربة والشوائب الكبيرة." },
+      { title: "المرحلة الثانية", img: "مراحل الفلتر/مرحله 2.png", desc: "فلتر كربوني لإزالة الكلور والروائح غير المرغوبة." },
+      { title: "المرحلة الثالثة", img: "مراحل الفلتر/مرحله 3.png", desc: "فلتر كربوني محسن لتحسين الطعم." },
+      { title: "المرحلة الرابعة", img: "مراحل الفلتر/مرحله 4.png", desc: "غشاء تنقية دقيق لتقليل الأملاح والمعادن الثقيلة." },
+      { title: "المرحلة الخامسة", img: "مراحل الفلتر/مرحله 5.png", desc: "كربون نهائي لتعزيز الطعم والرائحة." },
+      { title: "المرحلة السادسة", img: "مراحل الفلتر/مرحله 6.png", desc: "مرحلة معدنية لإضافة المعادن المفيدة." },
+      { title: "المرحلة السابعة", img: "مراحل الفلتر/مرحله 7.png", desc: "تعقيم إضافي للماء وتحسين الجودة النهائية." }
+    ]
+  };
+</script>
+>>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
+
+<!-- JS File -->
+<script src="project.js"></script>
+
+</body>
+</html>
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
