@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 window.COMPANY_NAME = {
     en: "safi",
     ar: "صافي"
@@ -371,20 +370,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   let getCompanyNameByLang = (lang) => {
-=======
-document.addEventListener("DOMContentLoaded", () => {
-  const companyName = window.COMPANY_NAME || { en: "safi", ar: "صافي" };
-  const translations = window.APP_TRANSLATIONS || {};
-
-  const nameEl = document.getElementById("companyName");
-  const langToggleBtn = document.getElementById("langToggleBtn");
-  const langToggleMenuBtn = document.getElementById("langToggleMenuBtn");
-  const defaultLang = "ar";
-  const storedLang = localStorage.getItem("lang");
-  let refreshSearchState = () => {};
-
-  const getCompanyNameByLang = (lang) => {
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
     if (typeof companyName === "string") {
       return companyName;
     }
@@ -395,7 +380,6 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   function applyHeaderLayout(lang) {
-<<<<<<< HEAD
     let menu = document.querySelector(".header-menu");
     let menuBtn = document.querySelector(".menu-btn");
     let header = document.querySelector(".main-header");
@@ -408,31 +392,13 @@ document.addEventListener("DOMContentLoaded", () => {
     let maxLeft = Math.max(minLeft, header.clientWidth - menuWidth - 8);
     let desiredLeft = btnRect.left - headerRect.left;
     let clampedLeft = Math.min(maxLeft, Math.max(minLeft, desiredLeft));
-=======
-    const menu = document.getElementById("headerMenu");
-    const menuBtn = document.querySelector(".menu-btn");
-    const header = document.querySelector(".main-header");
-    if (!menu || !menuBtn || !header) return;
-
-    const headerRect = header.getBoundingClientRect();
-    const btnRect = menuBtn.getBoundingClientRect();
-    const menuWidth = menu.offsetWidth || 320;
-    const minLeft = 8;
-    const maxLeft = Math.max(minLeft, header.clientWidth - menuWidth - 8);
-    const desiredLeft = btnRect.left - headerRect.left;
-    const clampedLeft = Math.min(maxLeft, Math.max(minLeft, desiredLeft));
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
 
     menu.style.left = `${clampedLeft}px`;
     menu.style.right = "auto";
   }
 
   function setLanguage(lang) {
-<<<<<<< HEAD
     let dict = translations[lang] || translations[defaultLang] || {};
-=======
-    const dict = translations[lang] || translations[defaultLang] || {};
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
     document.documentElement.setAttribute("lang", lang);
     document.documentElement.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
     applyHeaderLayout(lang);
@@ -441,36 +407,22 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     document.querySelectorAll("[data-i18n]").forEach((el) => {
-<<<<<<< HEAD
       let key = el.getAttribute("data-i18n");
-=======
-      const key = el.getAttribute("data-i18n");
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
       if (dict[key]) {
         el.textContent = dict[key];
       }
     });
 
     document.querySelectorAll("[data-i18n-alt]").forEach((el) => {
-<<<<<<< HEAD
       let key = el.getAttribute("data-i18n-alt");
-=======
-      const key = el.getAttribute("data-i18n-alt");
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
       if (dict[key]) {
         el.setAttribute("alt", dict[key]);
       }
     });
 
-<<<<<<< HEAD
     langToggleBtns.forEach((btn) => {
       if (!btn) return;
       let codeEl = btn.querySelector(".lang-code");
-=======
-    [langToggleBtn, langToggleMenuBtn].forEach((btn) => {
-      if (!btn) return;
-      const codeEl = btn.querySelector(".lang-code");
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
       if (codeEl) {
         codeEl.textContent = lang === "ar" ? "EN" : "AR";
       }
@@ -480,53 +432,31 @@ document.addEventListener("DOMContentLoaded", () => {
     refreshSearchState(lang);
   }
 
-<<<<<<< HEAD
   langToggleBtns.forEach((btn) => {
     if (!btn) return;
     btn.addEventListener("click", () => {
       let currentLang = document.documentElement.getAttribute("lang") || defaultLang;
       let nextLang = currentLang === "ar" ? "en" : "ar";
-=======
-  [langToggleBtn, langToggleMenuBtn].forEach((btn) => {
-    if (!btn) return;
-    btn.addEventListener("click", () => {
-      const currentLang = document.documentElement.getAttribute("lang") || defaultLang;
-      const nextLang = currentLang === "ar" ? "en" : "ar";
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
       setLanguage(nextLang);
     });
   });
 
   function initHeaderMenu() {
-<<<<<<< HEAD
     let header = document.querySelector(".main-header");
     let menuBtn = document.querySelector(".menu-btn");
     let menu = document.querySelector(".header-menu");
-=======
-    const header = document.querySelector(".main-header");
-    const menuBtn = document.querySelector(".menu-btn");
-    const menu = document.getElementById("headerMenu");
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
 
     if (!header || !menuBtn || !menu) {
       return;
     }
 
-<<<<<<< HEAD
     let closeMenu = () => {
-=======
-    const closeMenu = () => {
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
       menu.hidden = true;
       menuBtn.setAttribute("aria-expanded", "false");
       header.classList.remove("menu-open");
     };
 
-<<<<<<< HEAD
     let openMenu = () => {
-=======
-    const openMenu = () => {
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
       menu.hidden = false;
       menuBtn.setAttribute("aria-expanded", "true");
       header.classList.add("menu-open");
@@ -548,11 +478,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.addEventListener("click", (event) => {
-<<<<<<< HEAD
       let target = event.target;
-=======
-      const target = event.target;
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
       if (!(target instanceof Element)) {
         return;
       }
@@ -576,7 +502,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function initSiteSearch() {
-<<<<<<< HEAD
     let panel = document.querySelector(".site-search-panel");
     let box = panel ? panel.querySelector(".site-search-box") : null;
     let input = panel ? panel.querySelector(".site-search-input") : null;
@@ -584,25 +509,12 @@ document.addEventListener("DOMContentLoaded", () => {
     let closeBtn = panel ? panel.querySelector(".site-search-close") : null;
     let searchBtns = Array.from(document.querySelectorAll(".search-btn"));
     let main = document.querySelector("main");
-=======
-    const panel = document.getElementById("siteSearchPanel");
-    const box = panel ? panel.querySelector(".site-search-box") : null;
-    const input = document.getElementById("siteSearchInput");
-    const results = document.getElementById("siteSearchResults");
-    const closeBtn = document.getElementById("siteSearchCloseBtn");
-    const searchBtns = Array.from(document.querySelectorAll(".search-btn"));
-    const main = document.querySelector("main");
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
 
     if (!panel || !box || !input || !results || !closeBtn || !main || searchBtns.length === 0) {
       return;
     }
 
-<<<<<<< HEAD
     let uiText = {
-=======
-    const uiText = {
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
       en: {
         placeholder: "Search in page...",
         typeHint: "Type to search in this page content.",
@@ -617,27 +529,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let searchIndex = [];
     let searchTargetId = 0;
-<<<<<<< HEAD
     let defaultSearchMarkup = new WeakMap();
 
     let getCurrentLang = () => document.documentElement.getAttribute("lang") || defaultLang;
-=======
-    const defaultSearchMarkup = new WeakMap();
-
-    const getCurrentLang = () => document.documentElement.getAttribute("lang") || defaultLang;
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
 
     searchBtns.forEach((btn) => {
       defaultSearchMarkup.set(btn, btn.innerHTML);
     });
 
-<<<<<<< HEAD
     let ensureAnchor = (el) => {
       let target = el.closest("[id], article, section") || el;
-=======
-    const ensureAnchor = (el) => {
-      const target = el.closest("[id], article, section") || el;
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
       if (!target.id) {
         searchTargetId += 1;
         target.id = `search-target-${searchTargetId}`;
@@ -645,7 +546,6 @@ document.addEventListener("DOMContentLoaded", () => {
       return `#${target.id}`;
     };
 
-<<<<<<< HEAD
     let getSectionTitle = (el) => {
       let owner = el.closest("article, section");
       if (!owner) return "";
@@ -664,26 +564,6 @@ document.addEventListener("DOMContentLoaded", () => {
         let href = ensureAnchor(node);
         let title = getSectionTitle(node) || text;
         let key = `${href}|${text}`;
-=======
-    const getSectionTitle = (el) => {
-      const owner = el.closest("article, section");
-      if (!owner) return "";
-      const heading = owner.querySelector("h1, h2, h3");
-      return heading ? heading.textContent.trim() : "";
-    };
-
-    const buildSearchIndex = () => {
-      const nodes = main.querySelectorAll("h1, h2, h3, h4, p, li");
-      const seen = new Set();
-      const items = [];
-
-      nodes.forEach((node) => {
-        const text = node.textContent.replace(/\s+/g, " ").trim();
-        if (text.length < 3) return;
-        const href = ensureAnchor(node);
-        const title = getSectionTitle(node) || text;
-        const key = `${href}|${text}`;
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
         if (seen.has(key)) return;
         seen.add(key);
         items.push({ text, href, title });
@@ -692,7 +572,6 @@ document.addEventListener("DOMContentLoaded", () => {
       searchIndex = items;
     };
 
-<<<<<<< HEAD
     let getSnippet = (text, query) => {
       let normalized = text.toLowerCase();
       let idx = normalized.indexOf(query.toLowerCase());
@@ -707,33 +586,13 @@ document.addEventListener("DOMContentLoaded", () => {
     let renderResults = (query) => {
       let langText = uiText[getCurrentLang()] || uiText.en;
       let q = query.trim();
-=======
-    const getSnippet = (text, query) => {
-      const normalized = text.toLowerCase();
-      const idx = normalized.indexOf(query.toLowerCase());
-      if (idx < 0 || text.length <= 90) return text;
-      const start = Math.max(0, idx - 30);
-      const end = Math.min(text.length, idx + query.length + 40);
-      const prefix = start > 0 ? "..." : "";
-      const suffix = end < text.length ? "..." : "";
-      return `${prefix}${text.slice(start, end)}${suffix}`;
-    };
-
-    const renderResults = (query) => {
-      const langText = uiText[getCurrentLang()] || uiText.en;
-      const q = query.trim();
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
 
       if (!q) {
         results.innerHTML = `<p class="site-search-empty">${langText.typeHint}</p>`;
         return;
       }
 
-<<<<<<< HEAD
       let matched = searchIndex
-=======
-      const matched = searchIndex
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
         .filter((item) => item.text.toLowerCase().includes(q.toLowerCase()))
         .slice(0, 12);
 
@@ -752,24 +611,15 @@ document.addEventListener("DOMContentLoaded", () => {
         .join("");
     };
 
-<<<<<<< HEAD
     let updateSearchUiByLang = (lang) => {
       let langText = uiText[lang] || uiText.en;
-=======
-    const updateSearchUiByLang = (lang) => {
-      const langText = uiText[lang] || uiText.en;
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
       input.placeholder = langText.placeholder;
       if (!panel.hidden) {
         renderResults(input.value);
       }
     };
 
-<<<<<<< HEAD
     let openSearch = () => {
-=======
-    const openSearch = () => {
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
       buildSearchIndex();
       panel.hidden = false;
       updateSearchUiByLang(getCurrentLang());
@@ -781,11 +631,7 @@ document.addEventListener("DOMContentLoaded", () => {
       input.select();
     };
 
-<<<<<<< HEAD
     let closeSearch = () => {
-=======
-    const closeSearch = () => {
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
       panel.hidden = true;
       input.value = "";
       renderResults("");
@@ -798,10 +644,7 @@ document.addEventListener("DOMContentLoaded", () => {
     searchBtns.forEach((btn) => {
       btn.addEventListener("click", (event) => {
         event.preventDefault();
-<<<<<<< HEAD
         event.stopPropagation();
-=======
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
         if (panel.hidden) {
           openSearch();
         } else {
@@ -816,11 +659,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (panel.hidden) {
         return;
       }
-<<<<<<< HEAD
       let target = event.target;
-=======
-      const target = event.target;
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
       if (!(target instanceof Element)) {
         return;
       }
@@ -830,11 +669,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     results.addEventListener("click", (event) => {
-<<<<<<< HEAD
       let target = event.target;
-=======
-      const target = event.target;
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
       if (target instanceof Element && target.closest(".site-search-result")) {
         closeSearch();
       }
@@ -857,17 +692,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function initStepsSlider() {
-<<<<<<< HEAD
     let track = document.querySelector(".steps-track");
     let prevBtn = document.querySelector(".steps-nav-prev");
     let nextBtn = document.querySelector(".steps-nav-next");
     let cards = Array.from(track ? track.querySelectorAll('[class$="-step"]') : []);
-=======
-    const track = document.querySelector(".steps-track");
-    const prevBtn = document.querySelector(".steps-nav-prev");
-    const nextBtn = document.querySelector(".steps-nav-next");
-    const cards = Array.from(track ? track.querySelectorAll('[class$="-step"]') : []);
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
 
     if (!track || !prevBtn || !nextBtn || cards.length === 0) {
       return;
@@ -877,17 +705,10 @@ document.addEventListener("DOMContentLoaded", () => {
     let unlockTimer = null;
     let isAnimating = false;
 
-<<<<<<< HEAD
     let getVisibleCount = () => {
       let firstCard = cards[0];
       let gap = parseFloat(getComputedStyle(track).gap) || 0;
       let cardWidth = firstCard.getBoundingClientRect().width + gap;
-=======
-    const getVisibleCount = () => {
-      const firstCard = cards[0];
-      const gap = parseFloat(getComputedStyle(track).gap) || 0;
-      const cardWidth = firstCard.getBoundingClientRect().width + gap;
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
       if (!cardWidth) {
         return 1;
       }
@@ -895,29 +716,17 @@ document.addEventListener("DOMContentLoaded", () => {
       return Math.max(1, Math.floor((track.clientWidth + gap) / cardWidth));
     };
 
-<<<<<<< HEAD
     let getMaxIndex = () => Math.max(0, cards.length - getVisibleCount());
 
     let updateNavState = () => {
       let maxIndex = getMaxIndex();
-=======
-    const getMaxIndex = () => Math.max(0, cards.length - getVisibleCount());
-
-    const updateNavState = () => {
-      const maxIndex = getMaxIndex();
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
       currentIndex = Math.min(maxIndex, Math.max(0, currentIndex));
       prevBtn.disabled = currentIndex <= 0;
       nextBtn.disabled = currentIndex >= maxIndex;
     };
 
-<<<<<<< HEAD
     let scrollToIndex = (index) => {
       let maxIndex = getMaxIndex();
-=======
-    const scrollToIndex = (index) => {
-      const maxIndex = getMaxIndex();
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
       currentIndex = Math.min(maxIndex, Math.max(0, index));
       cards[currentIndex].scrollIntoView({
         behavior: "smooth",
@@ -927,11 +736,7 @@ document.addEventListener("DOMContentLoaded", () => {
       updateNavState();
     };
 
-<<<<<<< HEAD
     let move = (delta) => {
-=======
-    const move = (delta) => {
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
       if (isAnimating) {
         return;
       }
@@ -959,28 +764,16 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-<<<<<<< HEAD
       let trackRect = track.getBoundingClientRect();
       let isRtl = document.documentElement.dir === "rtl";
       let targetEdge = isRtl ? trackRect.right : trackRect.left;
-=======
-      const trackRect = track.getBoundingClientRect();
-      const isRtl = document.documentElement.dir === "rtl";
-      const targetEdge = isRtl ? trackRect.right : trackRect.left;
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
       let bestIndex = currentIndex;
       let bestDistance = Number.POSITIVE_INFINITY;
 
       cards.forEach((card, index) => {
-<<<<<<< HEAD
         let cardRect = card.getBoundingClientRect();
         let cardEdge = isRtl ? cardRect.right : cardRect.left;
         let distance = Math.abs(cardEdge - targetEdge);
-=======
-        const cardRect = card.getBoundingClientRect();
-        const cardEdge = isRtl ? cardRect.right : cardRect.left;
-        const distance = Math.abs(cardEdge - targetEdge);
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
 
         if (distance < bestDistance) {
           bestDistance = distance;
@@ -995,7 +788,6 @@ document.addEventListener("DOMContentLoaded", () => {
     updateNavState();
   }
 
-<<<<<<< HEAD
   function initStageFiltersScroller() {
     let track = document.querySelector(".stage-filters-track");
     let cards = Array.from(track ? track.querySelectorAll(".stage-filter-card") : []);
@@ -1225,10 +1017,5 @@ document.addEventListener("DOMContentLoaded", () => {
   setLanguage(storedLang || defaultLang);
   initOffersSlider();
   initStageFiltersScroller();
-=======
-  initHeaderMenu();
-  initSiteSearch();
-  setLanguage(storedLang || defaultLang);
->>>>>>> c1036fd2de666936226bfba8d422bd151a498fcd
   initStepsSlider();
 });
